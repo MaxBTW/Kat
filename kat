@@ -1,0 +1,214 @@
+-- Made by 24dxmon#4869
+
+-- Instances:
+
+local KatGui = Instance.new("ScreenGui")
+local kat = Instance.new("Frame")
+local elements = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local elements_2 = Instance.new("Frame")
+local elements_3 = Instance.new("Frame")
+local underline = Instance.new("Frame")
+local katname = Instance.new("TextLabel")
+local openclose = Instance.new("TextButton")
+local silentaimhead = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local silentaimtorso = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local esp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+KatGui.Name = "KatGui"
+KatGui.Parent = game.CoreGui
+KatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+kat.Name = "kat"
+kat.Parent = KatGui
+kat.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+kat.BorderSizePixel = 0
+kat.Position = UDim2.new(0.139696583, 0, 0.0933660939, 0)
+kat.Size = UDim2.new(0, 172, 0, 25)
+kat.Active = true
+kat.Draggable = true
+
+elements.Name = "elements"
+elements.Parent = kat
+elements.BackgroundColor3 = Color3.fromRGB(34, 32, 34)
+elements.BorderSizePixel = 0
+elements.Position = UDim2.new(0, 0, 1.08000004, 0)
+elements.Size = UDim2.new(0, 172, 0, 206)
+
+UICorner.Parent = elements
+
+elements_2.Name = "elements"
+elements_2.Parent = elements
+elements_2.BackgroundColor3 = Color3.fromRGB(34, 32, 34)
+elements_2.BorderSizePixel = 0
+elements_2.Position = UDim2.new(0, 0, -0.0122330301, 0)
+elements_2.Size = UDim2.new(0, 172, 0, 39)
+
+elements_3.Name = "elements"
+elements_3.Parent = elements
+elements_3.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+elements_3.BorderSizePixel = 0
+elements_3.Position = UDim2.new(0, 0, -0.0489321575, 0)
+elements_3.Size = UDim2.new(0, 172, 0, 10)
+
+underline.Name = "underline"
+underline.Parent = kat
+underline.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+underline.BorderSizePixel = 0
+underline.Position = UDim2.new(0, 0, 1, 0)
+underline.Size = UDim2.new(0, 172, 0, 2)
+
+katname.Name = "katname"
+katname.Parent = kat
+katname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+katname.BackgroundTransparency = 1.000
+katname.Size = UDim2.new(0, 172, 0, 25)
+katname.Font = Enum.Font.GothamSemibold
+katname.Text = "KAT"
+katname.TextColor3 = Color3.fromRGB(255, 255, 255)
+katname.TextSize = 20.000
+
+openclose.Name = "openclose"
+openclose.Parent = kat
+openclose.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+openclose.BackgroundTransparency = 1.000
+openclose.Position = UDim2.new(0.851888537, 0, 0, 0)
+openclose.Size = UDim2.new(0, 25, 0, 25)
+openclose.AutoButtonColor = false
+openclose.Font = Enum.Font.SourceSans
+openclose.Text = "-"
+openclose.TextColor3 = Color3.fromRGB(255, 255, 255)
+openclose.TextSize = 14.000
+
+silentaimhead.Name = "silentaimhead"
+silentaimhead.Parent = kat
+silentaimhead.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+silentaimhead.Position = UDim2.new(0.0348837227, 0, 1.72000062, 0)
+silentaimhead.Size = UDim2.new(0, 159, 0, 20)
+silentaimhead.Font = Enum.Font.SourceSans
+silentaimhead.Text = "Silent  Aim (Head)"
+silentaimhead.TextColor3 = Color3.fromRGB(0, 0, 0)
+silentaimhead.TextSize = 20.000
+silentaimhead.MouseButton1Down:connect(function()
+getgenv().SelectedPart = "Head"
+getgenv().VisibiltyCheck = false
+getgenv().TargetESP = true
+getgenv().FOV = 250
+getgenv().CircleVisibility = true
+getgenv().Distance = 500
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Input", true))()
+end)
+
+UICorner_2.Parent = silentaimhead
+
+silentaimtorso.Name = "silentaimtorso"
+silentaimtorso.Parent = kat
+silentaimtorso.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+silentaimtorso.Position = UDim2.new(0.0348837227, 0, 3.28000069, 0)
+silentaimtorso.Size = UDim2.new(0, 159, 0, 20)
+silentaimtorso.Font = Enum.Font.SourceSans
+silentaimtorso.Text = "Silent  Aim (Torso)"
+silentaimtorso.TextColor3 = Color3.fromRGB(0, 0, 0)
+silentaimtorso.TextSize = 20.000
+silentaimtorso.MouseButton1Down:connect(function()
+getgenv().SelectedPart = "Torso"
+getgenv().VisibiltyCheck = false
+getgenv().TargetESP = true
+getgenv().FOV = 250
+getgenv().CircleVisibility = true
+getgenv().Distance = 500
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Input", true))()
+end)
+
+UICorner_3.Parent = silentaimtorso
+
+esp.Name = "esp"
+esp.Parent = kat
+esp.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+esp.Position = UDim2.new(0.0348837227, 0, 4.80000067, 0)
+esp.Size = UDim2.new(0, 159, 0, 20)
+esp.Font = Enum.Font.SourceSans
+esp.Text = "ESP"
+esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+esp.TextSize = 20.000
+esp.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MaxBTW/esp/main/esp'))()
+end)
+
+UICorner_4.Parent = esp
+
+UICorner_5.Parent = kat
+
+-- Scripts:
+
+local function GKGI_fake_script() -- kat.Make GUI Draggable 
+	local script = Instance.new('LocalScript', kat)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(GKGI_fake_script)()
+local function NEUCD_fake_script() -- KatGui.KeyBind to Open GUI 
+	local script = Instance.new('LocalScript', KatGui)
+
+	local FrameObject = script.Parent.kat --Directs to the Mainframe/MainGUI that needs to be made visible
+	local Open = false --Lets the script know if the GUI is visible or not
+	
+	local UserInputService = game:GetService("UserInputService") --Directs to InputService to pickup what key the user presses
+	
+	UserInputService.InputBegan:Connect(function(KeyCode) --Connects function
+		if KeyCode.KeyCode == Enum.KeyCode.LeftAlt then --(CHANGE "RightShift" TO WHATEVER YOU WANT YOUR KEYBIND TO BE) --Tells the script which key is needed to be clicked 
+			if Open then --If the gui is open then close
+				FrameObject.Visible = false --Makes the gui invisible
+				Open = false --lets the script know the gui is closed
+			else --if the gui is not open then
+				Open = true --Lets the script know the gui is opened
+				FrameObject.Visible = true --makes the gui visible
+			end --ends variable
+		end --ends variable
+	end) --ends script
+end
+coroutine.wrap(NEUCD_fake_script)()
