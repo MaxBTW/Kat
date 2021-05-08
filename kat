@@ -98,9 +98,9 @@ silentaimhead.TextSize = 20.000
 silentaimhead.MouseButton1Down:connect(function()
 getgenv().SelectedPart = "Head"
 getgenv().VisibiltyCheck = false
-getgenv().TargetESP = true
+getgenv().TargetESP = false
 getgenv().FOV = 250
-getgenv().CircleVisibility = true
+getgenv().CircleVisibility = false
 getgenv().Distance = 500
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Input", true))()
 end)
@@ -119,9 +119,9 @@ silentaimtorso.TextSize = 20.000
 silentaimtorso.MouseButton1Down:connect(function()
 getgenv().SelectedPart = "Torso"
 getgenv().VisibiltyCheck = false
-getgenv().TargetESP = true
+getgenv().TargetESP = false
 getgenv().FOV = 250
-getgenv().CircleVisibility = true
+getgenv().CircleVisibility = false
 getgenv().Distance = 500
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yesok3877/Celestial-Silent-Aim/master/Auto-Input", true))()
 end)
